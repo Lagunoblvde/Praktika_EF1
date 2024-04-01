@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище UNLV_IncModelContainer" CdmEntityContainer="UNLV_IncEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="UNLV_IncModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="FirstNameClient" ColumnName="FirstNameClient" />
+          <ScalarProperty Name="SurNameClient" ColumnName="SurNameClient" />
+          <ScalarProperty Name="MiddleNameClient" ColumnName="MiddleNameClient" />
+          <ScalarProperty Name="PasportSeriya" ColumnName="PasportSeriya" />
+          <ScalarProperty Name="PasportNumber" ColumnName="PasportNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods">
+      <EntityTypeMapping TypeName="UNLV_IncModel.Goods">
+        <MappingFragment StoreEntitySet="Goods">
+          <ScalarProperty Name="ID_Good" ColumnName="ID_Good" />
+          <ScalarProperty Name="NameGood" ColumnName="NameGood" />
+          <ScalarProperty Name="GoodNumber" ColumnName="GoodNumber" />
+          <ScalarProperty Name="GoodCost" ColumnName="GoodCost" />
+          <ScalarProperty Name="GoodTeg" ColumnName="GoodTeg" />
+          <ScalarProperty Name="GoodNalichie" ColumnName="GoodNalichie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="UNLV_IncModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="ID_Good" ColumnName="ID_Good" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="Praktika1.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praktika1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid>
+        <DataGrid x:Name="Goods_Table"/>
+        <Button x:Name="GoodAdd_btn" Content="Добавить" HorizontalAlignment="Left" Margin="192,213,0,0" VerticalAlignment="Top" Width="129" Height="33" Click="GoodAdd_btn_Click"/>
+        <Button x:Name="GoodUp_btn" Content="Изменить" HorizontalAlignment="Left" Margin="343,213,0,0" VerticalAlignment="Top" Width="129" Height="33" Click="GoodUp_btn_Click"/>
+        <Button x:Name="GoodDel_btn" Content="Удалить" HorizontalAlignment="Left" Margin="490,213,0,0" VerticalAlignment="Top" Width="129" Height="33" Click="GoodDel_btn_Click"/>
+        <TextBox x:Name="NameG_tbx" HorizontalAlignment="Left" Margin="192,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="GoodN_tbx" HorizontalAlignment="Left" Margin="287,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="GoodC_tbx" HorizontalAlignment="Left" Margin="382,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="GoodNal_tbx" HorizontalAlignment="Left" Margin="472,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+    </Grid>
+</Page>
